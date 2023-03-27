@@ -33,7 +33,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 @DisplayName("비즈니스 로직 - 게시글 관리")
 class ArticleManagementServiceTest {
 
-    //    @Disabled("실제 API 호출 결과 관찰용이므로 평사시엔 비활성화")
+//    @Disabled("실제 API 호출 결과 관찰용이므로 평사시엔 비활성화")
     @DisplayName("실제 API 호출 테스트")
     @SpringBootTest
     @Nested
@@ -47,7 +47,7 @@ class ArticleManagementServiceTest {
 
         @DisplayName("게시글 API를 호출하면, 게시글을 가져온다.")
         @Test
-        void given_when_then() {
+        void givenNoting_whenCallingArticleApi_thenReturnsArticleList() {
             // Given
 
             // When
