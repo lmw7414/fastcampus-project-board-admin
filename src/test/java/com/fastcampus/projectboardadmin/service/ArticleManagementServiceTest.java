@@ -41,7 +41,8 @@ class ArticleManagementServiceTest {
 
         private final ArticleManagementService sut;
 
-        public RealApiTest(ArticleManagementService sut) {
+    @Autowired
+    public RealApiTest(ArticleManagementService sut) {
             this.sut = sut;
         }
 
