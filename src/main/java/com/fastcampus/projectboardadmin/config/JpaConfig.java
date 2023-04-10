@@ -24,4 +24,5 @@ public class JpaConfig {
                 .map(BoardAdminPrincipal.class::cast)
                 .map(BoardAdminPrincipal::getUsername);
     }
+
 }

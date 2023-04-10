@@ -148,7 +148,7 @@ class UserAccountManagementServiceTest {
             server.verify();
         }
     }
-    
+
     private UserAccountDto createUserAccountDto(String userId, String nickname) {
         return UserAccountDto.of(
                 userId,

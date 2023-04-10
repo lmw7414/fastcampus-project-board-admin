@@ -24,15 +24,19 @@ public record UserAccountClientResponse(
         );
     }
 
-    public List<UserAccountDto> userAccounts() { return this.embedded().userAccounts(); }
+    public List<UserAccountDto> userAccounts() {
+        return this.embedded().userAccounts();
+    }
 
-    public record Embedded(List<UserAccountDto> userAccounts) {}
+    public record Embedded(List<UserAccountDto> userAccounts) {
+    }
 
     public record Page(
             int size,
             long totalElements,
             int totalPages,
             int number
-    ) {}
+    ) {
+    }
 
 }

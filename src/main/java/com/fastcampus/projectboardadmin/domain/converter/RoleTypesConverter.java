@@ -21,4 +21,5 @@ public class RoleTypesConverter implements AttributeConverter<Set<RoleType>, Str
     public Set<RoleType> convertToEntityAttribute(String dbData) {
         return Arrays.stream(dbData.split(DELIMITER)).map(RoleType::valueOf).collect(Collectors.toSet());
     }
+
 }
