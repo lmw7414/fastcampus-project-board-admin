@@ -24,15 +24,19 @@ public record ArticleCommentClientResponse(
         );
     }
 
-    public List<ArticleCommentDto> articleComments() { return this.embedded().articleComments(); }
+    public List<ArticleCommentDto> articleComments() {
+        return this.embedded().articleComments();
+    }
 
-    public record Embedded(List<ArticleCommentDto> articleComments) {}
+    public record Embedded(List<ArticleCommentDto> articleComments) {
+    }
 
     public record Page(
             int size,
             long totalElements,
             int totalPages,
             int number
-    ) {}
+    ) {
+    }
 
 }

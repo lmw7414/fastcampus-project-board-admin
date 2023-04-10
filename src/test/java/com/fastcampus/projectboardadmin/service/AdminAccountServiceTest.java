@@ -22,9 +22,11 @@ import static org.mockito.BDDMockito.*;
 @ExtendWith(MockitoExtension.class)
 class AdminAccountServiceTest {
 
-    @InjectMocks private AdminAccountService sut;
+    @InjectMocks
+    private AdminAccountService sut;
 
-    @Mock private AdminAccountRepository adminAccountRepository;
+    @Mock
+    private AdminAccountRepository adminAccountRepository;
 
     @DisplayName("존재하는 회원 ID를 검색하면, 회원 데이터를 Optional로 반환한다.")
     @Test
@@ -131,7 +133,7 @@ class AdminAccountServiceTest {
                 "nickname",
                 "memo",
                 createdBy
-                );
+        );
     }
 
 }
