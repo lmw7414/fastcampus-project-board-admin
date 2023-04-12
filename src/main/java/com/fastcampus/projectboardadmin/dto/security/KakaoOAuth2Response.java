@@ -56,4 +56,5 @@ public record KakaoOAuth2Response(
 
     public String email() { return this.kakaoAccount().email(); }
     public String nickname() { return this.kakaoAccount().nickname(); }
+
 }
